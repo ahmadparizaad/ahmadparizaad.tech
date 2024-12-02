@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      mono: ['Space Mono', 'monospace'],
+    },
   },
   plugins: [],
 } satisfies Config;
