@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mohammad Ahmad - Portfolio Website �
+����������������������������������������������������������������������������������������������������������������������������
+����������������
+����������������������������������������������������������������������������������
+�����������������������������������������������������������
+���������������������������������������������������������������
+�����������������������������������������������������������������
+������������������������������������������������������������
+����������������������������������������������������������������
+�������������������
+����������������������������������
+�������������������������������
+������������������������������������������
+�������������������������������������������������
+�������������������������������������
+�������������������������������������������������������������������������
+�����������������������������������������������������������������
+�����������������������
+���������������������������������������
+�����������������������������������������������������������
+���������������������
+���������������������������������������
+��������������������
+���������������������������������������������
+��������������������
+����������������������������������������������������������������������������
+�������������������������
+��
+## 🎨 Design Features
 
-## Getting Started
+- **Neo-Brutalist Elements**
+  - Bold, contrasting colors
+  - Thick black borders
+  - Harsh shadows
+  - Textured backgrounds
 
-First, run the development server:
+- **Typography**
+  - Space Mono font family
+  - Bold headings
+  - Clean, readable text
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Animations**
+  - Smooth scroll transitions
+  - Hover effects
+  - Page load animations
+  - Scroll-triggered animations
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Colors**: Update the color scheme in `globals.css` and component files
+   ```css
+   .neo-brutalism {
+     background-color: #FF90E8;
+     /* Add your custom colors */
+   }
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Typography**: Modify the font settings in `tailwind.config.js`
+   ```javascript
+   module.exports = {
+     theme: {
+       extend: {
+         fontFamily: {
+           mono: ['Your-Font', 'monospace'],
+         },
+       },
+     },
+   };
+   ```
 
-## Learn More
+3. **Content**: Update personal information in respective component files
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 Responsive Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Mobile-first approach
+- Breakpoints:
+  - sm: 640px
+  - md: 768px
+  - lg: 1024px
+  - xl: 1280px
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⚡ Performance
 
-## Deploy on Vercel
+- Optimized images
+- Lazy loading components
+- Smooth animations
+- Efficient asset loading
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## 🤝 Contact
+
+Mohammad Ahmad - [LinkedIn](https://www.linkedin.com/in/ahmadparizaad) - mohammadahmad7001@gmail.com
+
+Project Link: [https://github.com/ahmadparizaad/portfolio](https://github.com/ahmadparizaad/portfolio)
+
+## 🙏 Acknowledgments
+
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [GSAP](https://greensock.com/gsap/)
