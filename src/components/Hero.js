@@ -79,7 +79,7 @@ const SocialLink = ({ href, icon, text }) => {
         text: "Twitter"
       },
       {
-        href: "http://instagram.com/ahmadparizaad",
+        href: "http://instagram.com/ahmad_parizaad",
         icon: <SocialIcon type="instagram" />,
         text: "Instagram"
       }
