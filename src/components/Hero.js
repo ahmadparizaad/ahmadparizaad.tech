@@ -3,7 +3,8 @@
 
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaBlogger } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 
 const SocialIcon = ({ type }) => {
@@ -13,9 +14,11 @@ const SocialIcon = ({ type }) => {
         case "linkedin":
         return <FaLinkedin />;
         case "twitter":
-        return <FaTwitter />;
+        return <FaXTwitter />;
         case "instagram":
         return <FaInstagram />;
+        case "blog":
+        return <FaBlogger />;
         default:
         return null;
     }
@@ -66,23 +69,23 @@ const SocialLink = ({ href, icon, text }) => {
       {
         href: "https://github.com/ahmadparizaad",
         icon: <SocialIcon type="github" />,
-        text: "GitHub"
       },
       {
         href: "https://www.linkedin.com/in/ahmadparizaad",
         icon: <SocialIcon type="linkedin" />,
-        text: "LinkedIn"
       },
       {
         href: "https://twitter.com/ahmadparizaad",
         icon: <SocialIcon type="twitter" />,
-        text: "Twitter"
       },
       {
         href: "http://instagram.com/ahmad_parizaad",
         icon: <SocialIcon type="instagram" />,
-        text: "Instagram"
-      }
+      },
+      {
+        href: "https://blog.ahmadparizaad.tech",
+        icon: <SocialIcon type="blog" />,
+      },
     ];
   
     return (
@@ -101,18 +104,18 @@ const SocialLink = ({ href, icon, text }) => {
           className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4"
         >
           {/* Main Content Container */}
-          <div className="bg-white neo-card p-8 md:p-12 max-w-3xl mx-auto">
+          <div className="bg-white neo-card p-8 md:p-12 max-w-5xl mx-auto">
             <h1 className="text-5xl md:text-7xl text  text-black  -black hero-title mb-6 font-mono z-[3]">
               Mohammad Ahmad
             </h1>
-            <div className="bg-[#00FF00] neo-card p-4 mb-8 transform -rotate-1">
+            <div className="bg-[#00FF00] neo-card p-4 mb-8 transform w-fit -rotate-1">
               <h2 className="text-2xl text-black md:text-3xl font-bold hero-tagline font-mono z-99">
-                Full Stack Blockchain Developer
+                Full Stack Engineer
               </h2>
             </div>
             <p className="text-lg md:text-xl text-black mb-12 font-mono leading-relaxed">
-              Computer Engineering graduate specializing in blockchain development 
-              and full-stack web applications.
+              Crafting blockchain solutions and AI-powered web applications. 
+              Building the future at the intersection of Web3 and intelligent technologies.
             </p>
             
             {/* Social Links */}
@@ -122,7 +125,6 @@ const SocialLink = ({ href, icon, text }) => {
                   key={index}
                   href={link.href}
                   icon={link.icon}
-                  text={link.text}
                 />
               ))}
             </div>

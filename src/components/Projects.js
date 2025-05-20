@@ -36,7 +36,31 @@ const ProjectCard = ({ title, description, features, period, link }) => {
   };
   
   const Projects = () => {
-    const projects = [
+  const projects = [
+      {
+        title: "Brevity AI",
+        period: "Feb 2025 - Present",
+        description: "AI-driven blogging platform that automates content creation and publishing.",
+        features: [
+          "Built with Next.js, TypeScript, and Google Gemini API",
+          "Automated publishing via Google Blogger API and OAuth 2.0",
+          "Implemented n8n workflows for content scheduling",
+          "Reduced manual effort by 85% in content creation workflow"
+        ],
+        link: "https://brevityy-ai.vercel.app/"
+      },
+      {
+        title: "Campus Book",
+        period: "Oct 2024 - Jan 2025",
+        description: "Scalable second-hand book marketplace for students to save on textbook costs.",
+        features: [
+          "Built with Next.js, TypeScript, and MongoDB",
+          "Advanced search by title, course, and location",
+          "Implemented direct chat between buyers and sellers",
+          "Helped students save up to 50% on textbook purchases"
+        ],
+        link: "https://campus-book.vercel.app/"
+      },
       {
         title: "HindExpress",
         period: "June - Sept 2023",
@@ -47,39 +71,16 @@ const ProjectCard = ({ title, description, features, period, link }) => {
           "Integrated News API for real-time updates"
         ],
         link: "https://github.com/ahmadparizaad/HindExpress"
-      },
-      {
-        title: "S2S Book Marketplace",
-        period: "June - Sept 2023",
-        description: "Platform for buying/selling second-hand books within communities.",
-        features: [
-          "50% cost savings for students",
-          "MongoDB integration for efficient data management",
-          "Responsive design with Next.JS and Tailwind"
-        ],
-        link: "https://buysellbook.vercel.app/"
-      },
-      {
-        title: "NapFT Marketplace",
-        period: "2023",
-        description: "Optimized smart contracts for NFT transactions.",
-        features: [
-          "Enhanced contract efficiency",
-          "Improved platform functionality",
-          "Automated transaction processes"
-        ],
-        link: "https://www.napft.com/"
       }
     ];
   
-    return (
-      <section
+    return (      <section
       id='projects'
       data-scroll-section
       className="py-20 px-4 bg-[#FFE600] neo-brutalism">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl text-black font-bold font-mono mb-12 bg-white neo-card inline-block px-6 py-4 -rotate-1">
-            Featured Projects
+            Professional Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-black gap-8">
             {projects.map((project, index) => (
